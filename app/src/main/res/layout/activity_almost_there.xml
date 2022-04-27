@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    NIM     : 10119172
+    Nama    : Rahman Insani
+    Kelas   : IF-5
+
+    Senin, 25 April 2022
+-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLightBlue"
+    tools:context=".AlmostThereActivity"
+    >
+    <LinearLayout
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="@dimen/dimen32"
+        android:layout_marginEnd="@dimen/dimen32">
+
+        <TextView
+            android:layout_gravity="center"
+            style="@style/TextWhite36"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/almost_there"/>
+
+        <TextView
+            android:layout_gravity="center_horizontal"
+            style="@style/TextSecondaryWhite16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen24"
+            android:text="@string/almost_there_desc"
+            android:textAlignment="center" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/verify_button"
+            style="@style/ButtonLightBlueWhiteBorder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen80"
+            android:text="@string/verify" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    NIM     : 10119172
+    Nama    : Rahman Insani
+    Kelas   : IF-5
+
+    Senin, 25 April 2022
+-->
+
+<resources>
+
+    <style name="EditWhite">
+        <item name="android:textColorHint">@color/colorBackground</item>
+        <item name="android:textColor">@color/colorBackground</item>
+        <item name="backgroundTint">@color/colorBackground</item>
+        <item name="android:textSize">@dimen/font16</item>
+    </style>
+
+    <style name="EditGraySecondary">
+        <item name="android:textColorHint">@color/colorBackgroundInviteFriend</item>
+        <item name="android:textColor">@color/colorBackgroundInviteFriend</item>
+        <item name="backgroundTint">@color/colorBackgroundInviteFriend</item>
+        <item name="android:textSize">@dimen/font16</item>
+    </style>
+
+    <style name="EditGray">
+        <item name="android:textColorHint">@color/colorSeparator</item>
+        <item name="android:textColor">@color/colorSeparator</item>
+        <item name="backgroundTint">@color/colorSeparator</item>
+        <item name="android:textSize">@dimen/font16</item>
+    </style>
+    
+</resources>

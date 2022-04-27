@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    NIM     : 10119172
+    Nama    : Rahman Insani
+    Kelas   : IF-5
+
+    Senin, 25 April 2022
+-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context=".HomeActivity">
+
+    <ImageView
+        android:contentDescription="@string/header_bg"
+        android:id="@+id/header_background_image"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen120"
+        android:src="@drawable/ic_header_profile"
+        android:scaleType="fitXY"/>
+
+    <ImageView
+        android:contentDescription="@string/hamburger_menu_icon"
+        android:layout_marginTop="@dimen/dimen16"
+        android:layout_marginStart="@dimen/dimen16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_side_menu"/>
+
+    <ImageView
+        android:contentDescription="@string/notification_icon"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/dimen16"
+        android:layout_marginEnd="@dimen/dimen16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_notification"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="@dimen/dimen96"
+        android:layout_height="@dimen/dimen96"
+        android:elevation="@dimen/dimen4"
+        android:src="@drawable/ic_profile_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dimen72"/>
+
+    <View
+        android:id="@+id/separator_line1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen4"
+        android:background="@color/colorShadowHeader"
+        android:layout_below="@+id/header_background_image"/>
+
+    <TextView
+        android:id="@+id/username"
+        style="@style/TextLightBlue20"
+        android:layout_below="@id/profile_image"
+        android:layout_marginTop="@dimen/dimen8"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/my_name" />
+
+    <TextView
+        android:id="@+id/blood_type"
+        style="@style/TextGray16"
+        android:layout_below="@id/username"
+        android:layout_marginTop="@dimen/dimen4"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/my_blood_type" />
+
+    <View
+        android:id="@+id/separator_line2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen1"
+        android:layout_marginTop="@dimen/dimen16"
+        android:background="@color/colorShadowHeader"
+        android:layout_below="@+id/blood_type"/>
+
+    <LinearLayout
+        android:id="@+id/blood_give"
+        android:layout_marginStart="@dimen/dimen32"
+        android:layout_below="@id/separator_line2"
+        android:layout_marginTop="@dimen/dimen16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            style="@style/TextLightBlue28"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/_75"/>
+        <TextView
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            style="@style/TextGray12Caps"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/blood_give"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/separator_line2"
+        android:layout_marginTop="@dimen/dimen16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            style="@style/TextLightBlue28"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/_100"/>
+        <TextView
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            style="@style/TextGray12Caps"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/blood_received"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/separator_line2"
+        android:layout_marginTop="@dimen/dimen16"
+        android:layout_marginEnd="@dimen/dimen32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            style="@style/TextLightBlue28"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/_330"/>
+        <TextView
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            style="@style/TextGray12Caps"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/thanks"/>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/separator_line3"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen1"
+        android:layout_marginTop="@dimen/dimen16"
+        android:background="@color/colorShadowHeader"
+        android:layout_below="@+id/blood_give"/>
+
+    <LinearLayout
+        android:layout_below="@id/separator_line3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginStart="@dimen/dimen48"
+        android:layout_marginTop="@dimen/dimen24">
+
+        <LinearLayout
+            android:id="@+id/search_donor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:contentDescription="@string/search_donor"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_search_donor" />
+
+            <TextView
+                style="@style/TextBlack18"
+                android:layout_marginTop="@dimen/dimen8"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/search_donor"/>
+
+            <TextView
+                style="@style/TextGray12"
+                android:layout_marginTop="@dimen/dimen2"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/search_donor_desc"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/dimen24"
+            android:id="@+id/message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:contentDescription="@string/message"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_message" />
+
+            <TextView
+                style="@style/TextBlack18"
+                android:layout_marginTop="@dimen/dimen8"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/message"/>
+
+            <TextView
+                style="@style/TextGray12"
+                android:layout_marginTop="@dimen/dimen2"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/message_desc"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_below="@id/separator_line3"
+        android:layout_alignParentEnd="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginEnd="@dimen/dimen48"
+        android:layout_marginTop="@dimen/dimen24">
+
+        <LinearLayout
+            android:id="@+id/blood_needed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:contentDescription="@string/blood_needed"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_blood_needed" />
+
+            <TextView
+                style="@style/TextBlack18"
+                android:layout_marginTop="@dimen/dimen8"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/blood_needed"/>
+
+            <TextView
+                style="@style/TextGray12"
+                android:layout_marginTop="@dimen/dimen2"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/blood_needed_desc"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/dimen24"
+            android:id="@+id/donor_history"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:contentDescription="@string/donor_history"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_donor_history" />
+
+            <TextView
+                style="@style/TextBlack18"
+                android:layout_marginTop="@dimen/dimen8"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/donor_history"/>
+
+            <TextView
+                style="@style/TextGray12"
+                android:layout_marginTop="@dimen/dimen2"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/donor_history_desc"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

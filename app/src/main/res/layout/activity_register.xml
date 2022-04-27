@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    NIM     : 10119172
+    Nama    : Rahman Insani
+    Kelas   : IF-5
+
+    Senin, 25 April 2022
+-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context=".RegisterActivity">
+
+    <Toolbar
+        android:id="@+id/top_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/ic_header">
+
+        <ImageView
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/back"
+            android:src="@drawable/ic_header_back" />
+
+        <TextView
+            style="@style/TextWhite18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen48"
+            android:text="@string/register" />
+
+    </Toolbar>
+
+    <View
+        android:id="@+id/separator_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen4"
+        android:background="@color/colorShadowHeader"
+        android:layout_below="@id/top_toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/separator_line">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/dimen28"
+            android:layout_marginStart="@dimen/dimen32"
+            android:layout_marginEnd="@dimen/dimen32"
+            android:paddingBottom="@dimen/dimen28">
+
+            <EditText
+                android:id="@+id/edit_username"
+                style="@style/EditGray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints="username"
+                android:hint="@string/username_hint"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/edit_email"
+                style="@style/EditGray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edit_username"
+                android:layout_marginTop="@dimen/dimen12"
+                android:autofillHints="emailAddress"
+                android:hint="@string/email_hint"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/edit_phone_number"
+                style="@style/EditGray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edit_email"
+                android:layout_marginTop="@dimen/dimen12"
+                android:autofillHints="phone"
+                android:hint="@string/phone_number_hint"
+                android:inputType="phone" />
+
+            <RadioGroup
+                android:id="@+id/gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edit_phone_number"
+                android:layout_marginTop="@dimen/dimen8"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    style="@style/RadioButtonGrayText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen16"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/colorLightBlue"
+                    android:checked="true"
+                    android:text="@string/male" />
+
+                <RadioButton
+                    style="@style/RadioButtonGrayText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen16"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/colorLightBlue"
+                    android:text="@string/female" />
+
+            </RadioGroup>
+
+            <LinearLayout
+                android:id="@+id/blood"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/gender"
+                android:layout_marginTop="@dimen/dimen8"
+                android:orientation="horizontal">
+
+                <Spinner
+                    style="@style/SpinnerGray"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:entries="@array/blood_type" />
+
+                <Spinner
+                    style="@style/SpinnerGray"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:entries="@array/rhesus_type" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/edit_password"
+                style="@style/EditGray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/blood"
+                android:layout_marginTop="@dimen/dimen12"
+                android:autofillHints="password"
+                android:hint="@string/password_hint"
+                android:inputType="textPassword" />
+
+            <EditText
+                android:id="@+id/edit_retype_password"
+                style="@style/EditGray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edit_password"
+                android:layout_marginTop="@dimen/dimen12"
+                android:autofillHints="password"
+                android:hint="@string/retype_password_hint"
+                android:inputType="textPassword" />
+
+            <RadioGroup
+                android:id="@+id/user_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edit_retype_password"
+                android:layout_marginTop="@dimen/dimen8"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    style="@style/RadioButtonGrayText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen16"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/colorLightBlue"
+                    android:checked="true"
+                    android:text="@string/personal" />
+
+                <RadioButton
+                    style="@style/RadioButtonGrayText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen16"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/colorLightBlue"
+                    android:text="@string/organization" />
+
+            </RadioGroup>
+
+            <Spinner
+                android:id="@+id/spinner_job"
+                style="@style/SpinnerGray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/user_type"
+                android:layout_marginTop="@dimen/dimen8"
+                android:entries="@array/job" />
+
+            <EditText
+                android:id="@+id/edit_home_address"
+                style="@style/EditGray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/spinner_job"
+                android:layout_marginTop="@dimen/dimen12"
+                android:autofillHints="none"
+                android:hint="@string/home_address"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/edit_default_location"
+                style="@style/EditGray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edit_home_address"
+                android:layout_marginTop="@dimen/dimen12"
+                android:autofillHints="none"
+                android:drawableEnd="@drawable/ic_blood_needed_location"
+                android:hint="@string/default_location"
+                android:inputType="text" />
+
+            <CheckBox
+                android:id="@+id/checkbox_agree"
+                style="@style/EditGray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edit_default_location"
+                android:layout_marginTop="@dimen/dimen16"
+                android:buttonTint="@color/colorLightBlue"
+                android:checked="true"
+                android:paddingStart="@dimen/dimen12"
+                android:paddingEnd="@dimen/dimen12"
+                android:text="@string/agree" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/register_button"
+                style="@style/ButtonWhiteLightBlueBorder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/checkbox_agree"
+                android:layout_marginTop="@dimen/dimen16"
+                android:text="@string/register" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

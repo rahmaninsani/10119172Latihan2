@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    NIM     : 10119172
+    Nama    : Rahman Insani
+    Kelas   : IF-5
+
+    Senin, 25 April 2022
+-->
+
+<resources>
+    <style name="TextWhite16Caps" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/font16</item>
+        <item name="android:textColor">@color/colorBackground</item>
+        <item name="textAllCaps">true</item>
+    </style>
+
+    <style name="TextWhite16" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/font16</item>
+        <item name="android:textColor">@color/colorBackground</item>
+    </style>
+
+    <style name="TextWhite18" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/font18</item>
+        <item name="android:textColor">@color/colorBackground</item>
+    </style>
+
+    <style name="TextWhite36" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/font36</item>
+        <item name="android:textColor">@color/colorBackground</item>
+    </style>
+
+    <style name="TextSecondaryWhite16" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/font16</item>
+        <item name="android:textColor">@color/colorBackgroundInviteFriend</item>
+    </style>
+
+    <style name="TextLightBlue20">
+        <item name="android:textColor">@color/colorLightBlue</item>
+        <item name="android:textSize">@dimen/dimen20</item>
+    </style>
+
+    <style name="TextLightBlue28">
+        <item name="android:textColor">@color/colorLightBlue</item>
+        <item name="android:textSize">@dimen/dimen28</item>
+    </style>
+
+    <style name="TextGray16">
+        <item name="android:textSize">@dimen/font16</item>
+    </style>
+
+    <style name="TextGray12Caps">
+        <item name="android:textColor">@color/colorSeparator</item>
+        <item name="android:textSize">@dimen/font12</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="TextGray12">
+        <item name="android:textColor">@color/colorSeparator</item>
+        <item name="android:textSize">@dimen/font12</item>
+    </style>
+
+    <style name="TextBlack18">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/font18</item>
+    </style>
+
+</resources>

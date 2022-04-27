@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    NIM     : 10119172
+    Nama    : Rahman Insani
+    Kelas   : IF-5
+
+    Senin, 25 April 2022
+-->
+
+<resources>
+    <style name="ButtonLightBlueWhiteBorder" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/button_border_white</item>
+        <item name="android:textColor">@color/colorBackground</item>
+        <item name="android:textSize">@dimen/font16</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="ButtonWhiteLightBlueBorder" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/button_border_lightblue</item>
+        <item name="android:textColor">@color/colorLightBlue</item>
+        <item name="android:textSize">@dimen/font16</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+</resources>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    NIM     : 10119172
+    Nama    : Rahman Insani
+    Kelas   : IF-5
+
+    Senin, 25 April 2022
+-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLightBlue"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/app_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_welcome_logo"
+        android:layout_marginTop="@dimen/dimen120"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/app_logo" />
+
+    <EditText
+        android:inputType="textPersonName"
+        android:autofillHints="username"
+        android:id="@+id/edit_username"
+        style="@style/EditWhite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/app_logo"
+        android:layout_marginStart="@dimen/dimen32"
+        android:layout_marginTop="@dimen/dimen40"
+        android:layout_marginEnd="@dimen/dimen32"
+        android:hint="@string/username_hint" />
+
+    <EditText
+        android:inputType="textPassword"
+        android:autofillHints="password"
+        android:id="@+id/edit_password"
+        style="@style/EditWhite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_username"
+        android:layout_marginStart="@dimen/dimen32"
+        android:layout_marginTop="@dimen/dimen12"
+        android:layout_marginEnd="@dimen/dimen32"
+        android:hint="@string/password_hint" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_login"
+        style="@style/ButtonLightBlueWhiteBorder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_password"
+        android:layout_marginStart="@dimen/dimen32"
+        android:layout_marginTop="@dimen/dimen24"
+        android:layout_marginEnd="@dimen/dimen32"
+        android:text="@string/login" />
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        style="@style/TextWhite16Caps"
+        android:id="@+id/text_or"
+        android:layout_below="@id/button_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen24"
+        android:layout_marginBottom="@dimen/dimen24"
+        android:layout_marginStart="@dimen/dimen32"
+        android:layout_marginEnd="@dimen/dimen32"
+        android:text="@string/or" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:drawableStart="@drawable/ic_welcome_fb_login"
+        android:drawablePadding="-52dp"
+        android:paddingStart="@dimen/dimen52"
+        android:id="@+id/button_facebook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_or"
+        android:layout_marginStart="@dimen/dimen32"
+        android:layout_marginEnd="@dimen/dimen32"
+        style="@style/ButtonLightBlueWhiteBorder"
+        android:text="@string/connect_with_facebook"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_facebook"
+        android:layout_marginTop="@dimen/dimen24"
+        android:layout_marginStart="@dimen/dimen32"
+        android:layout_marginEnd="@dimen/dimen32"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            style="@style/TextSecondaryWhite16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/register_hint" />
+
+        <TextView
+            android:id="@+id/register"
+            style="@style/TextWhite16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/register"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+</RelativeLayout>
